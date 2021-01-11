@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block konten%}
+
+<div class="jumbotron">
+    <h1 class="display-4">Hello, {{current_user.nama}}!</h1>
+    <p class="lead">Welcome To The Complaint Information System. Your Complaint Becomes Our Fix</p>
+    <hr class="my-4">
+    <p>click to start your complaint.</p>
+    <a class="btn btn-warning btn-lg" href="{{url_for('rmahasiswa.pengaduan')}}" role="button">Pengaduan</a>
+  </div>
+
+{% endblock%}
